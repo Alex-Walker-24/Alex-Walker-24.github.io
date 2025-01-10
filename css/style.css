@@ -286,3 +286,13 @@ p{
 .carousel .carousel-indicators li.active{
     background-color: var(--primary-color);
 }
+
+
+
+img{
+    width: 300px;
+    height: 450px;
+    border-radius: 50%;
+}
+
+
