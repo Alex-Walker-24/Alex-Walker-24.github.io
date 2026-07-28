@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/img/math-integrals.svg" />
+  <title>Alejandro Alejo Martínez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════ NAV ══════════ -->
+  <nav class="nav">
+    <ul class="nav-links">
+      <li><a href="#hero"         class="active">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#proyectos-web">Proyectos Web</a></li>
+      <li><a href="#dashboards-bi">Proyectos BI</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     NAVEGACIÓN MÓVIL FLOTANTE (Estilo Píldora)
+     ══════════════════════════════════════════════════════════ -->
+<header class="mobile-floating-nav">
+  <nav class="mobile-nav-container">
+    
+    <!-- Enlace: Inicio -->
+    <a href="#hero" class="mobile-nav-link active" aria-label="Inicio">
+      <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+    </a>
+
+    <!-- Enlace: Sobre mí -->
+    <a href="#sobre-mi" class="mobile-nav-link" aria-label="Sobre mí">
+      <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+    </a>
+
+    <!-- Enlace: Experiencia -->
+    <a href="#experiencia" class="mobile-nav-link" aria-label="Experiencia">
+      <svg viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+    </a>
+
+    <!-- Enlace: Habilidades -->
+    <a href="#habilidades" class="mobile-nav-link" aria-label="Habilidades">
+      <svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+    </a>
+
+    <!-- Enlace: Proyectos Web -->
+    <a href="#proyectos-web" class="mobile-nav-link" aria-label="Proyectos Web">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16v10H4V6zm14 2H6v6h12V8zM2 18h20v2H2z"/></svg>
+    </a>
+
+    <!-- Enlace: Proyectos BI -->
+    <a href="#dashboards-bi" class="mobile-nav-link" aria-label="Proyectos BI">
+      <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+    </a>
+
+    <!-- Enlace: Contacto -->
+    <a href="#contacto" class="mobile-nav-link" aria-label="Contacto">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+    </a>
+
+  </nav>
+</header>
+
+
+  
+
+  <!-- ══════════ HERO ══════════ -->
+  <section id="hero">
+    <canvas id="network-canvas"></canvas>
+
+    <div class="hero-inner">
+
+      <!-- Left column -->
+      <div class="hero-left">
+        <p class="hero-eyebrow">Hola, soy</p>
+
+        <h1 class="hero-name">
+          Alejandro Alejo<br>Martínez
+        </h1>
+
+        <div class="hero-roles">
+          <div class="roles-bar"></div>
+          <div class="roles-list">
+            <span class="role-item">Programador</span>
+            <span class="role-sep">◆</span>
+            <span class="role-item dim">Docente</span>
+            <span class="role-sep">◆</span>
+            <span class="role-item">Analista de Datos</span>
+          </div>
+        </div>
+
+        <p class="hero-bio">
+          Construyo sistemas que resuelven problemas reales, analizo datos
+          para tomar mejores decisiones y enseño tecnología para multiplicar
+          el impacto.
+        </p>
+
+        <div class="hero-ctas">
+            <!------<a href="#proyectos" class="btn-primary">Ver proyectos &rarr;</a>-------->
+            <!------<a href="assets/cv.pdf" class="btn-secondary" download>Descargar CV &darr;</a>------>
+            <button href="/CV/Alejandro_Alejo_CV.pdf">
+                <a class="btn-cv" href="/CV/CV_ALEJANDRO_ALEJO.pdf" target="_blank">
+                    Descargar CV &darr;
+                </a>
+            </button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="hero-socials">
+          <!-- GitHub -->
+          <a href="https://github.com/Alex-Walker-24" target="_blank" rel="noopener" class="soc-link" title="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.31 3.44 9.82 8.21 11.41.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.3 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23A11.5 11.5 0 0 1 12 6.8c1.02 0 2.05.14 3.01.4 2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58C20.57 22.32 24 17.81 24 12.5 24 5.87 18.63.5 12 .5z"/></svg>
+          </a>
+          <!-- LinkedIn — actualiza el href con tu URL real -->
+          <a href="https://www.linkedin.com/in/alejandro-alejo/" target="_blank" rel="noopener" class="soc-link" title="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM3.56 20.45V9h3.56v11.45H3.56zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+          <!-- Email — actualiza con tu correo real -->
+          <a href="mailto:aalexalejo96@gmail.com" class="soc-link" title="Email">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right column: Code Editor -->
+      <div class="hero-right">
+        <div class="code-editor">
+          <div class="ed-header">
+            <div class="ed-dots">
+              <span class="ed-dot r"></span>
+              <span class="ed-dot y"></span>
+              <span class="ed-dot g"></span>
+            </div>
+            <span class="ed-filename">Programador</span>
+          </div>
+          <div class="ed-body">
+            <div class="ed-lines" id="ed-lines"></div>
+
+
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Placeholder — aquí irán las siguientes secciones -->
+  
+
+
+
+
+  
+    <!-- ══════════ SOBRE MÍ ══════════ -->
+     
+    <section id="sobre-mi">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-eyebrow">CONOCE MÁS</span>
+          <h2 class="section-title">Sobre mí</h2>
+          <p class="section-subtitle">Ingeniero en Computación y próximo Ingeniero en Desarrollo de Software con especialización en Análisis de Datos. Experiencia en desarrollo de software, análisis de datos y docencia técnica, participando en la creación de soluciones para el sector público y educativo. Apasionado por transformar datos en decisiones y código en productos con impacto, con un nivel de inglés B1 y una mentalidad de aprendizaje continuo.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Card 1: Formación -->
+          <div class="about-card">
+            <div class="card-icon">
+              <img class="icono-grande" src="/img/graduado.png"/>
+            </div>
+            <h3 class="card-title">Formación</h3>
+            <ul class="card-list">
+              <li><strong>Licenciatura:</strong> Ingeniería en Computación (IPN, 2020)</li>
+              <li><strong>Especializando en:</strong> Ingeniería en Desarrollo de Software (Tecmilenio, en curso)</li>
+              <li><strong>Enfoque:</strong> Análisis de Datos y Programación</li>
+            </ul>
+          </div>
+
+          <!-- Card 2: Experiencia -->
+          <div class="about-card">
+            <div class="card-icon">
+              <img class="icono-grande" src="/img/programador.png"/>
+            </div>
+            <h3 class="card-title">Experiencia</h3>
+            <ul class="card-list">
+              <li><strong>Desarrollo Web:</strong>Laravel, Bootstrap, MySQL</li>
+              <li><strong>Análisis de Datos:</strong> Power BI, SQL, Excel</li>
+              <li><strong>Instituciones:</strong> Fiscalía, Secretaría de Movilidad, Stefanini</li>
+            </ul>
+          </div>
+
+          <!-- Card 3: Docencia -->
+          <div class="about-card">
+            <div class="card-icon">
+              <img class="icono-grande" src="/img/ChatGPT Image 16 jun 2026, 05_28_36 a.m.png"/>
+            </div>
+            <h3 class="card-title">Docencia</h3>
+            <ul class="card-list">
+              <li><strong>Instituciones:</strong> La Salle, Justo Sierra</li>
+              <li><strong>Áreas:</strong> Matemáticas, Física, Programación</li>
+              <li><strong>Objetivo:</strong> Multiplicar impacto por educación</li>
+            </ul>
+          </div>
+
+          <!-- Card 4: Filosofía -->
+          <div class="about-card">
+            <div class="card-icon">
+              <img class="icono-grande" src="/img/filosofia.png"/>
+            </div>
+            <h3 class="card-title">Filosofía</h3>
+            <ul class="card-list">
+              <li><strong>Resolver problemas reales</strong> con código y datos</li>
+              <li><strong>Enseñar a otros</strong> a pensar como ingeniero</li>
+              <li><strong>Aprender siempre</strong> nuevas tecnologías y enfoques</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+<!-- ══════════ EXPERIENCIA ══════════ -->
+
+<section id="experiencia">
+  <canvas id="exp-canvas"></canvas>
+
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-eyebrow">TRAYECTORIA</span>
+      <h2 class="section-title">Experiencia</h2>
+      <p class="section-subtitle">Un recorrido a través de instituciones y proyectos que me han formado como ingeniero.</p>
+    </div>
+
+    <!-- TIMELINE -->
+    <div class="timeline-wrapper">
+      <svg class="timeline-line" viewBox="0 0 1400 120" preserveAspectRatio="xMidYMid meet">
+        <line x1="20" y1="60" x2="1380" y2="60" stroke="url(#grad)" stroke-width="2" stroke-dasharray="5,5"/>
+        <defs>
+          <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#F0B429;stop-opacity:0" />
+            <stop offset="50%" style="stop-color:#F0B429;stop-opacity:.3" />
+            <stop offset="100%" style="stop-color:#F0B429;stop-opacity:0" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <div class="timeline-track">
+        <!-- Job 1 -->
+        <div class="timeline-node" data-job="0">
+          <div class="node-dot">
+            <div class="node-dot-inner"></div>
+          </div>
+          <div class="node-content">
+            <div class="node-icon">🚌</div>
+            <h3 class="node-title">Secretaría de Movilidad</h3>
+            <p class="node-date">2019 - 2020</p>
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="timeline-node" data-job="1">
+          <div class="node-dot">
+            <div class="node-dot-inner"></div>
+          </div>
+          <div class="node-content">
+            <div class="node-icon">📚</div>
+            <h3 class="node-title">CEB 4/2 - Jesus Reyes Heroles</h3>
+            <p class="node-date">2020 - 2021</p>
+          </div>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="timeline-node" data-job="2">
+          <div class="node-dot">
+            <div class="node-dot-inner"></div>
+          </div>
+          <div class="node-content">
+            <div class="node-icon">⚖️</div>
+            <h3 class="node-title">Fiscalía General de Justicia</h3>
+            <p class="node-date">2020 - 2021</p>
+          </div>
+        </div>
+
+        <!-- Job 4 -->
+        <div class="timeline-node" data-job="3">
+          <div class="node-dot">
+            <div class="node-dot-inner"></div>
+          </div>
+          <div class="node-content">
+            <div class="node-icon">💼</div>
+            <h3 class="node-title">Stefanini México S.A. de C.V.</h3>
+            <p class="node-date">2021 - 2021</p>
+          </div>
+        </div>
+
+        <!-- Job 5 -->
+        <div class="timeline-node" data-job="4">
+          <div class="node-dot">
+            <div class="node-dot-inner"></div>
+          </div>
+          <div class="node-content">
+            <div class="node-icon">🎓</div>
+            <h3 class="node-title">La Salle - Escuela Cristóbal Colón</h3>
+            <p class="node-date">2021 - 2024</p>
+          </div>
+        </div>
+
+        <!-- Job 6 -->
+        <div class="timeline-node" data-job="5">
+          <div class="node-dot">
+            <div class="node-dot-inner"></div>
+          </div>
+          <div class="node-content">
+            <div class="node-icon">🏫</div>
+            <h3 class="node-title">Justo Sierra - Preparatoria</h3>
+            <p class="node-date">2025 - 2026</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal" id="jobModal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      
+      <div class="modal-header">
+        <div class="modal-icon" id="modalIcon"></div>
+        <div class="modal-info">
+          <h2 id="modalTitle"></h2>
+          <p id="modalDate"></p>
+          <span id="modalRole" class="modal-role"></span>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <h3 class="modal-section-title">Descripción</h3>
+        <p id="modalDesc"></p>
+
+        <h3 class="modal-section-title" style="margin-top: 1.5rem;">Responsabilidades</h3>
+        <ul id="modalRespons" class="modal-list"></ul>
+
+        <h3 class="modal-section-title" style="margin-top: 1.5rem;">Tecnologías & Herramientas</h3>
+        <div id="modalTech" class="modal-tags"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- ══════════ HABILIDADES ══════════ -->
+
+<section id="habilidades">
+
+    <div class="section-container">
+
+        <div class="section-header">
+
+            <span class="section-eyebrow">STACK TECNOLÓGICO</span>
+
+            <h2 class="section-title">Habilidades</h2>
+
+            <p class="section-subtitle">
+                Tecnologías y herramientas con las que desarrollo software,
+                analizo datos y potencio procesos educativos.
+            </p>
+
+        </div>
+
+        <!-- ===================== -->
+        <!-- Desarrollo -->
+        <!-- ===================== -->
+
+        <div class="skills-category">
+
+            <h3 class="skills-title">
+                Desarrollo de Software
+            </h3>
+
+            <p class="skills-description">"Tecnologías para crear aplicaciones web y soluciones empresariales."</p>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <img src="img/Software/html5.svg">
+                    <span>HTML5</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/css33.svg">
+                    <span>CSS3</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/js.svg">
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img//Software/php.svg">
+                    <span>PHP</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/laravel.svg">
+                    <span>Laravel</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/bootstrap.svg">
+                    <span>Bootstrap</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/tailwind.svg">
+                    <span>Tailwind</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/python.svg">
+                    <span>Python</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/mysql.svg">
+                    <span>MySQL</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/sql server.svg">
+                    <span>SQL Server</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/git.svg">
+                    <span>Git</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/github.svg">
+                    <span>GitHub</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/npm.svg">
+                    <span>NPM</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/composer.svg">
+                    <span>Composer</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/wordpress.svg">
+                    <span>WordPress</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/cpanel.svg">
+                    <span>cPanel</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ===================== -->
+        <!-- Datos -->
+        <!-- ===================== -->
+
+        <div class="skills-category">
+
+            <h3 class="skills-title">
+                Análisis de Datos Jr
+            </h3>
+
+            <p class="skills-description">"Herramientas para transformar datos en información e indicadores para la toma de decisiones."</p>
+
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <img src="img/Software/power-bi.svg">
+                    <span>Power BI</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/tableau.svg">
+                    <span>Tableau</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/sql server.svg">
+                    <span>SQL Server</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/mysql.svg">
+                    <span>MySQL</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/excel.svg">
+                    <span>Excel</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/dbeaver.svg">
+                    <span>DBeaver</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/workbench.svg">
+                    <span>MySQL Workbench</span>
+                </div>                
+
+            </div>
+
+        </div>
+
+        <!-- ===================== -->
+        <!-- Docencia -->
+        <!-- ===================== -->
+
+        <div class="skills-category">
+
+            <h3 class="skills-title">
+                Docencia 
+            </h3>
+
+            <p class="skills-description">"Plataformas y herramientas para enseñanza, colaboración y creación de contenido."</p>
+
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <img src="img/Software/classroom.svg">
+                    <span>Google Classroom</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/teams.svg">
+                    <span>Microsoft Teams</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/Kahoot.svg">
+                    <span>Kahoot!</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/wayground.svg">
+                    <span>Wayground</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/zipgrade.svg">
+                    <span>ZipGrade</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/labster.png">
+                    <span>Labster</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="img/Software/Filmora.svg">
+                    <span>Filmora</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ==========================================
+     PROYECTOS WEB
+=========================================== -->
+
+<section id="proyectos-web">
+
+    <canvas id="projects-canvas"></canvas>
+
+    <div class="section-container">
+
+        <div class="section-header">
+
+            <span class="section-eyebrow">
+                Portafolio
+            </span>
+
+            <h2 class="section-title">
+                Proyectos Web
+            </h2>
+
+            <p class="section-subtitle">
+                Aplicaciones web y plataformas desarrolladas utilizando tecnologías modernas para resolver necesidades reales.
+            </p>
+
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- Proyecto 1 -->
+<article class="project-card">
+
+    <!-- Barra superior -->
+
+    <div class="project-window">
+
+        <div class="window-buttons">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+        </div>
+
+        <span class="window-title">
+            Https://becas.localhost
+        </span>
+
+        <div class="window-space"></div>
+
+    </div>
+
+    <!-- CONTENIDO -->
+
+    <div class="project-body">
+
+        <!-- Imagen -->
+
+        <div class="project-image">
+
+            <div class="project-image-wrapper">
+
+                <img src="img/Proyectos/becas.jpeg"
+                     alt="Sistema de Becas">
+
+            </div>
+
+        </div>
+
+        <!-- Información -->
+
+        <div class="project-content">
+
+            <h3>
+                Sistema de Control de Becas
+            </h3>
+
+            <p>
+                Plataforma para la administración de becas estudiantiles,
+                incluyendo registro, inscripción y control de usuarios.
+            </p>
+
+            <div class="project-tags">
+
+                <span>
+                    <img src="img/Software/laravel.svg">
+                    Laravel
+                </span>
+
+                <span>
+                    <img src="img/Software/tailwind.svg">
+                    Tailwind
+                </span>
+
+                <span>
+                    <img src="img/Software/mysql.svg">
+                    MySQL
+                </span>
+
+                <span>
+                    <img src="img/Software/xampp.svg">
+                    XAMPP
+                </span>
+
+            </div>
+        </div>
+
+    </div>
+
+</article>
+
+
+<!-- Proyecto 2 -->
+            <article class="project-card">
+
+                <!-- Barra superior tipo ventana -->
+                <div class="project-window">
+                    <div class="window-buttons">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                    </div>
+
+                    <span class="window-title">
+                        Https://fiscalia.localhost
+                    </span>
+
+                    <div class="window-space"></div>
+                </div>
+
+                <!-- CONTENIDO -->
+                <div class="project-body">
+
+                    <!-- Imagen -->
+                    <div class="project-image">
+                        <div class="project-image-wrapper">
+                            <img src="img/Proyectos/fiscalia.jpeg" 
+                                 alt="Vista previa del Sistema de Control de Registros" 
+                                 loading="lazy">
+                        </div>
+                    </div>
+
+                    <!-- Información -->
+                    <div class="project-content">
+                        <h3>
+                            Sistema de Control de Registros
+                        </h3>
+
+                        <p>
+                            Plataforma administrativa para el registro y gestión de información institucional.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>
+                                <img src="img/Software/laravel.svg" alt="" aria-hidden="true">
+                                Laravel
+                            </span>
+
+                            <span>
+                                <img src="img/Software/bootstrap.svg" alt="" aria-hidden="true">
+                                Bootstrap
+                            </span>
+
+                            <span>
+                                <img src="img/Software/mysql.svg" alt="" aria-hidden="true">
+                                MySQL
+                            </span>
+
+                            <span>
+                                <img src="img/Software/xampp.svg" alt="" aria-hidden="true">
+                                XAMPP
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- Proyecto 3 -->
+            <article class="project-card">
+
+                <!-- Barra superior tipo ventana -->
+                <div class="project-window">
+                    <div class="window-buttons">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                    </div>
+
+                    <span class="window-title">
+                        Https://evotics.localhost
+                    </span>
+
+                    <div class="window-space"></div>
+                </div>
+
+                <!-- CONTENIDO -->
+                <div class="project-body">
+
+                    <!-- Imagen -->
+                    <div class="project-image">
+                        <div class="project-image-wrapper">
+                            <img src="img/Proyectos/evotics.jpeg" 
+                                 alt="Vista previa del sitio web Consultoría EVO TIC'S" 
+                                 loading="lazy">
+                        </div>
+                    </div>
+
+                    <!-- Información -->
+                    <div class="project-content">
+                        <h3>
+                            Consultoría EVO TIC'S
+                        </h3>
+
+                        <p>
+                            Sitio web corporativo desarrollado en WordPress para una empresa especializada
+                            en consultoría tecnológica.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>
+                                <img src="img/Software/wordpress.svg" alt="" aria-hidden="true">
+                                WordPress
+                            </span>
+
+                            <span>
+                                <img src="img/Software/cpanel.svg" alt="" aria-hidden="true">
+                                cPanel
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- Proyecto 4 -->
+            <article class="project-card">
+
+                <!-- Barra superior tipo ventana -->
+                <div class="project-window">
+                    <div class="window-buttons">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                    </div>
+
+                    <span class="window-title">
+                        Https://lineablanca.localhost
+                    </span>
+
+                    <div class="window-space"></div>
+                </div>
+
+                <!-- CONTENIDO -->
+                <div class="project-body">
+
+                    <!-- Imagen -->
+                    <div class="project-image">
+                        <div class="project-image-wrapper">
+                            <img src="img/Proyectos/lineablanca.jpeg" 
+                                 alt="Vista previa de Servicios Mayen Línea Blanca" 
+                                 loading="lazy">
+                        </div>
+                    </div>
+
+                    <!-- Información -->
+                    <div class="project-content">
+                        <h3>
+                            Servicios Mayen Línea Blanca
+                        </h3>
+
+                        <p>
+                            Landing Page desarrollada para una empresa dedicada a la reparación de línea blanca.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>
+                                <img src="img/Software/html5.svg" alt="" aria-hidden="true">
+                                HTML5
+                            </span>
+
+                            <span>
+                                <img src="img/Software/css33.svg" alt="" aria-hidden="true">
+                                CSS3
+                            </span>
+
+                            <span>
+                                <img src="img/Software/bootstrap.svg" alt="" aria-hidden="true">
+                                Bootstrap
+                            </span>
+
+                            <span>
+                                <img src="img/Software/cpanel.svg" alt="" aria-hidden="true">
+                                cPanel
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!--=========================================
+DASHBOARDS BI
+==========================================-->
+
+<section id="dashboards-bi">
+
+    <div class="section-container">
+
+        <div class="section-header">
+
+            <span class="section-eyebrow">
+                Business Intelligence
+            </span>
+
+            <h2 class="section-title">
+                Dashboards & Análisis de Datos
+            </h2>
+
+            <p class="section-subtitle">
+                Visualizaciones interactivas desarrolladas para apoyar la toma de decisiones mediante indicadores, análisis y modelos de datos.
+            </p>
+
+        </div>
+
+        <div class="bi-grid">
+
+            <!-- Dashboard 1 -->
+
+            <article class="bi-card">
+
+                <div class="project-window">
+                    <div class="window-buttons">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                    </div>
+
+                    <span class="window-title">
+                        VideoJuegos.pbix
+                    </span>
+
+                    <div class="window-space"></div>
+                </div>
+
+                <div class="bi-content">
+
+                    <img class="bi-image"
+                         src="img/BI/PrimerProyecto.png"
+                         alt="Dashboard de Ventas">
+
+
+                    <h3>Análisis de Ventas</h3>
+
+                    <p>
+                        Dashboard interactivo para analizar ventas por región,
+                        vendedores, productos y periodos mediante indicadores dinámicos.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span><img src="img/Software/power-bi.svg">Power BI</span>
+
+                        <span><img src="img/Software/sql server.svg">SQL Server</span>
+
+                        <span><img src="img/Software/excel.svg">Excel</span>
+
+                    </div>
+
+                    <a href="https://app.powerbi.com/groups/me/reports/57bc17e8-7983-4658-90ac-53c475fd351c/0c02d003a1814ec26a58?experience=power-bi" class="project-btn" target="_blank">
+                        Ver Dashboard →
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Dashboard 2 -->
+
+            <article class="bi-card">
+
+                <div class="project-window">
+                    <div class="window-buttons">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                    </div>
+
+                    <span class="window-title">
+                        Calificaciones.pbix
+                    </span>
+
+                    <div class="window-space"></div>
+                </div>
+
+                <div class="bi-content">
+
+                    <img class="bi-image"
+                         src="img/BI/PrimerProyecto.png"
+                         alt="Dashboard de Ventas">
+
+
+                    <h3>Análisis de Calificaciones</h3>
+
+                    <p>
+                        Dashboard interactivo para analizar calificaciones por estudiante,
+                        asignatura y periodo mediante indicadores dinámicos.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span><img src="img/Software/power-bi.svg">Power BI</span>
+
+                        <span><img src="img/Software/sql server.svg">SQL Server</span>
+
+                        <span><img src="img/Software/excel.svg">Excel</span>
+
+                    </div>
+
+                    <a href="https://app.powerbi.com/groups/me/reports/57bc17e8-7983-4658-90ac-53c475fd351c/0c02d003a1814ec26a58?experience=power-bi" class="project-btn" target="_blank">
+                        Ver Dashboard →
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Dashboard 3 -->
+
+            <article class="bi-card">
+
+                <div class="project-window">
+                    <div class="window-buttons">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                    </div>
+
+                    <span class="window-title">
+                        Finanzas.pbix
+                    </span>
+
+                    <div class="window-space"></div>
+                </div>
+
+                <div class="bi-content">
+
+                    <img class="bi-image"
+                         src="img/BI/PrimerProyecto.png"
+                         alt="Dashboard de Ventas">
+
+
+                    <h3>Análisis de Finanzas</h3>
+
+                    <p>
+                        Dashboard interactivo para analizar datos financieros por departamento,
+                        proyecto y periodo mediante indicadores dinámicos.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span><img src="img/Software/power-bi.svg">Power BI</span>
+
+                        <span><img src="img/Software/sql server.svg">SQL Server</span>
+
+                        <span><img src="img/Software/excel.svg">Excel</span>
+
+                    </div>
+
+                    <a href="https://app.powerbi.com/groups/me/reports/57bc17e8-7983-4658-90ac-53c475fd351c/0c02d003a1814ec26a58?experience=power-bi" class="project-btn" target="_blank">
+                        Ver Dashboard →
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Dashboard 4 -->
+
+            <article class="bi-card">
+
+                <div class="project-window">
+                    <div class="window-buttons">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                    </div>
+
+                    <span class="window-title">
+                        Reporte RH.pbix
+                    </span>
+
+                    <div class="window-space"></div>
+                </div>
+
+                <div class="bi-content">
+
+                    <img class="bi-image"
+                         src="img/BI/SegundoProyecto.png"
+                         alt="Dashboard de Recursos Humanos">
+
+
+                    <h3>Análisis de Recursos Humanos</h3>
+
+                    <p>
+                        Dashboard interactivo para analizar datos de recursos humanos por departamento,
+                        puesto y periodo mediante indicadores dinámicos.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span><img src="img/Software/power-bi.svg">Power BI</span>
+
+                        <span><img src="img/Software/sql server.svg">SQL Server</span>
+
+                        <span><img src="img/Software/excel.svg">Excel</span>
+
+                    </div>
+
+                    <a href="https://app.powerbi.com/groups/me/reports/be639629-3eb0-41d9-9421-92628471e1d8/f16e08019e7062483c58?experience=power-bi" class="project-btn" target="_blank">
+                        Ver Dashboard →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ══════════════════════════════════════════════════════════
+     SECCIÓN DE CONTACTO: INICIO
+     ══════════════════════════════════════════════════════════ -->
+<section id="contacto">
+  <!-- Cielo nocturno y estrellas centelleantes de fondo -->
+  <div class="contact-sky">
+    <div class="stars"></div>
+  </div>
+  
+  <!-- Montaña poligonal decorativa inferior -->
+  <div class="mountains-bg"></div>
+
+  <div class="section-container">
+    <!-- Encabezado de la sección -->
+    <div class="section-header">
+      <span class="section-eyebrow">CONECTEMOS</span>
+      <h2 class="section-title">Contacto</h2>
+      <p class="section-subtitle">¿Tienes un proyecto en mente o quieres que platiquemos? Escríbeme y te responderé lo antes posible.</p>
+    </div>
+
+    <!-- Contenedor general de las tarjetas de contacto -->
+    <div class="contact-grid">
+      
+      <!-- ── TARJETA 1: WHATSAPP ── -->
+      <a href="https://wa.me/525526625033" target="_blank" rel="noopener" class="contact-card whatsapp-card">
+        <!-- Bloque superior con textura de terreno 3D e icono flotante -->
+        <div class="contact-terrain">
+          <div class="terrain-cube"></div>
+          <div class="contact-icon-3d whatsapp-icon-box">
+            <img src="img/whatsapp.svg" alt="WhatsApp Icon" class="contact-img" />    
+          </div>
+        </div>
+        <!-- Información y texto de la tarjeta -->
+        <div class="contact-info">
+          <h3>WhatsApp</h3>
+          <p>¡Hablemos directamente por mensaje!</p>
+          <span class="contact-link-btn">Enviar mensaje &rarr;</span>
+        </div>
+      </a>
+
+      <!-- ── TARJETA 2: GMAIL ── -->
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aalexalejo96@gmail.com" target="_blank" rel="noopener" class="contact-card email-card">
+        <!-- Bloque superior con textura de terreno 3D e icono flotante -->
+        <div class="contact-terrain">
+          <div class="terrain-cube"></div>
+          <div class="contact-icon-3d gmail-icon-box">
+            <img src="img/gmail.svg" alt="Gmail Icon" class="contact-img" />
+          </div>
+        </div>
+        <!-- Información y texto de la tarjeta -->
+        <div class="contact-info">
+          <h3>Correo Electrónico</h3>
+          <p>aalexalejo96@gmail.com</p>
+          <span class="contact-link-btn">Enviar correo &rarr;</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+<!-- ══════════════════════════════════════════════════════════
+     SECCIÓN DE CONTACTO: FIN
+     ══════════════════════════════════════════════════════════ -->
+
+
+
+
+
+
+  <!-- ══════════ SCRIPTS ══════════ -->
+  <script src="script.js"></script>
+
+</body>
+</html>
