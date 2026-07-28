@@ -28,7 +28,6 @@
       color: var(--frost);
       font-family: var(--font-ui);
       overflow-x: hidden;
-      
     }
 
 
@@ -145,7 +144,7 @@
       gap: 60px;
       align-items: center;
       width: 100%;
-      max-width: 1400px;
+      max-width: 2200px;
       margin: 0 auto;
       padding: 60px;
     }
@@ -699,7 +698,7 @@ button:active {
 .section-container {
   position: relative;
   width: 100%;
-  max-width: 1400px;
+  max-width: 2000px;
   margin: 0 auto;
   padding: 120px 60px;
 }
@@ -924,7 +923,7 @@ height:100%;
   display: flex;
   justify-content: center;
   align-items: stretch;
-  max-width: 1600px;
+  max-width: 2700px;
   margin: 0 auto;
   padding: 50px 10px;
   gap: 100px;
