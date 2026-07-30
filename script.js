@@ -195,7 +195,7 @@ resize();
   window.addEventListener('resize', resize);
 
   // Más partículas para formar una red más densa
-  const pts = Array.from({ length: 800 }, () => ({
+  const pts = Array.from({ length: 300 }, () => ({
     x: Math.random() * W,
     y: Math.random() * H,
     vx: (Math.random() - .5) * 2,
