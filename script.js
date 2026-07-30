@@ -516,7 +516,7 @@ document.addEventListener('keydown', (e) => {
     resize();
     window.addEventListener("resize", resize);
 
-    const pts = Array.from({ length: 1400 }, () => ({
+    const pts = Array.from({ length: 500 }, () => ({
 
         x: Math.random() * W,
         y: Math.random() * H,
