@@ -951,7 +951,6 @@ button:active{
   background: var(--midnight);
   border-top: 1px solid rgba(240, 180, 41, .08);
   overflow: hidden;
-  padding: 40px 40px;  /* Antes era 60px 60px */
 }
 
 #exp-canvas {
@@ -966,7 +965,6 @@ height:100%;
   position: relative;
   z-index: 2;
   padding: 20px 0 50px;
-  height: 420px;  /* Antes era 650px */
 }
 
 .timeline-line {
