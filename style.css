@@ -615,57 +615,38 @@ button:active{
 
 
 @media (max-width:480px){
-
     .hero-inner{
-
-        padding:24px;
-
+        padding: 16px;
     }
 
     .hero-name{
-
-        font-size:46px;
-
+        font-size: 32px;          /* Era 46px */
     }
 
     .hero-eyebrow{
-
-        font-size:22px;
-
+        font-size: 14px;          /* Era 22px */
     }
 
     .hero-bio{
-
-        font-size:18px;
-
+        font-size: 13px;          /* Era 18px */
     }
 
     .role-item{
-
-        font-size:15px;
-
-        letter-spacing:1px;
-
+        font-size: 11px;          /* Era 15px */
+        letter-spacing: 0.8px;
     }
 
     .ed-lines{
-
-        font-size:13px;
-
+        font-size: 12px;          /* Era 13px */
     }
 
     .ed-line{
-
-        padding:0 12px;
-
+        padding: 0 8px;           /* Era 12px */
     }
 
     .ed-num{
-
-        margin-right:12px;
-
+        margin-right: 8px;        /* Era 12px */
     }
-
 }
 
 
