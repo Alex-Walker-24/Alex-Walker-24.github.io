@@ -101,7 +101,7 @@
         [19, `    <span class="st">'          enseñar'</span><span class="pu">;</span>`],
         [20, `<span class="pu">}</span>`],
         [21, ``],
-        [22, `<span class="cm">// Siempre aprendiendo, siempre construyendo...</span>`],
+        [22, `<span class="cm">// Siempre aprendiendo y construyendo...</span>`],
       ];
 
       function textLen(html) {
