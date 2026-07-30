@@ -613,40 +613,73 @@ button:active{
 
 }
 
-
 @media (max-width:480px){
+
     .hero-inner{
-        padding: 16px;
+        padding:16px;
     }
 
     .hero-name{
-        font-size: 32px;          /* Era 46px */
+        font-size:32px;
     }
 
     .hero-eyebrow{
-        font-size: 14px;          /* Era 22px */
+        font-size:14px;
     }
 
     .hero-bio{
-        font-size: 13px;          /* Era 18px */
+        font-size:13px;
     }
 
     .role-item{
-        font-size: 11px;          /* Era 15px */
-        letter-spacing: 0.8px;
+        font-size:11px;
+        letter-spacing:0.8px;
+    }
+
+    /* ─── EDITOR OPTIMIZADO ─── */
+    .code-editor{
+        max-width:100%;
+        border-radius:10px;
+    }
+
+    .ed-header{
+        padding:8px 12px;
+    }
+
+    .ed-dots{
+        gap:6px;
+    }
+
+    .ed-dot{
+        width:10px;
+        height:10px;
+    }
+
+    .ed-filename{
+        font-size:10px;
+        padding:2px 8px;
+    }
+
+    .ed-body{
+        padding:12px 0 16px;
+        min-height:240px;
     }
 
     .ed-lines{
-        font-size: 12px;          /* Era 13px */
+        font-size:10px;
+        line-height:1.5;
     }
 
     .ed-line{
-        padding: 0 8px;           /* Era 12px */
+        padding:0 6px;
     }
 
     .ed-num{
-        margin-right: 8px;        /* Era 12px */
+        min-width:20px;
+        margin-right:6px;
+        font-size:9px;
     }
+
 }
 
 

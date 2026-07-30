@@ -77,6 +77,7 @@
     (function initEditor() {
       const container = document.getElementById('ed-lines');
 
+      
       // [lineNumber, htmlContent]  —  '' = línea en blanco
       const LINES = [
         [1,  `<span class="kw">class</span> <span class="cls">Developer</span> <span class="pu">{</span>`],
@@ -96,10 +97,11 @@
         [15, `    data<span class="pu">:</span>     <span class="pu">[</span><span class="st">'Power BI'</span><span class="pu">,</span> <span class="st">'SQL'</span><span class="pu">,</span> <span class="st">'Excel'</span><span class="pu">]</span>`],
         [16, `  <span class="pu">};</span>`],
         [17, ``],
-        [18, `  Pasiones  <span class="pu">=</span> <span class="st">'Construir, analizar y enseñar'</span><span class="pu">;</span>`],
-        [19, `<span class="pu">}</span>`],
-        [20, ``],
-        [21, `<span class="cm">// Siempre aprendiendo, siempre construyendo...</span>`],
+        [18, `  Pasiones  <span class="pu">=</span> <span class="st">'Construir, analizar y'</span>`],
+        [19, `    <span class="st">'          enseñar'</span><span class="pu">;</span>`],
+        [20, `<span class="pu">}</span>`],
+        [21, ``],
+        [22, `<span class="cm">// Siempre aprendiendo, siempre construyendo...</span>`],
       ];
 
       function textLen(html) {
