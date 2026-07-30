@@ -1395,38 +1395,22 @@ height:100%;
 
 .skills-category{
 
-    margin-top:80px;
+    margin-top:60px;
 
 }
-
-.skills-title{
-
-    font-size:34px;
-
-    margin-bottom:35px;
-
-    color:var(--gold);
-
-    font-weight:700;
-}
-
 
 /**/
 
 .skills-heading{
 
-    margin-bottom:35px;
+    margin-bottom:28px;
 
 }
 
 .skills-title{
-
-    font-size:36px;
-
+    font-size:clamp(28px,2vw,34px);
     color:var(--gold);
-
-    margin-bottom:10px;
-
+    margin-bottom:12px;
     font-weight:700;
 
 }
@@ -1435,11 +1419,11 @@ height:100%;
 
     color:var(--mist-lt);
 
-    font-size:22px;
+    font-size:18px;
 
-    line-height:1.5;
+    line-height:1.7;
 
-    max-width:800px;
+    max-width:700px;
     
     margin-bottom: 20px; /* Espacio debajo del texto */
 
@@ -1451,83 +1435,58 @@ height:100%;
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fill,minmax(170px,1fr));
+    grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
 
-    gap:22px;
+    gap:20px;
 
 }
 
 .skill-card{
 
     background:rgba(15,23,41,.70);
-
     border:1px solid rgba(240,180,41,.12);
-
     border-radius:14px;
-
-    padding:28px;
-
+    padding:24px;
     display:flex;
-
     flex-direction:column;
-
     justify-content:center;
-
     align-items:center;
-
-    gap:18px;
-
+    gap:14px;
     transition:.35s;
-
     cursor:pointer;
 
 }
 
 .skill-card:hover{
 
-    transform: translateY(-10px) scale(1.03);
-
+    transform: translateY(-8px);
     border: 1px solid #F0B429;
-
     background: rgba(240,180,41,.08);
-
     box-shadow:
         0 0 10px rgba(240,180,41,.8),
         0 0 25px rgba(240,180,41,.6),
         0 0 50px rgba(240,180,41,.35);
-
 }
 
 .skill-card img{
-
-    width:70px;
-
-    height:70px;
-
+    width:58px;
+    height:58px;
     object-fit:contain;
-
     transition:.35s;
-
-    transform: scale(1.15);
-
-
+    transform: scale(1.05);
 }
 
 .skill-card:hover img{
 
-    transform:scale(1.3);
+    transform:scale(1.15);
     filter: drop-shadow(0 0 6px #F0B429);
 
 }
 
 .skill-card span{
-
-    font-size:18px;
-
+    font-size:16px;
     color:var(--frost);
-
     font-weight:600;
-
     text-align:center;
 
 }
@@ -1536,7 +1495,7 @@ height:100%;
 .skill-card:hover span{
 
     color: var(--gold);
-    transform:scale(1.2);
+    transform:scale(1.08);
 }
 
 @media(max-width:768px){
@@ -1549,7 +1508,7 @@ grid-template-columns:repeat(2,1fr);
 
 .skills-title{
 
-font-size:28px;
+font-size:30px;
 
 text-align:center;
 
@@ -1621,7 +1580,7 @@ font-size:15px;
 
     margin:auto;
 
-    font-size:17px;
+    font-size:16px;
     text-align:center;
 
 }
