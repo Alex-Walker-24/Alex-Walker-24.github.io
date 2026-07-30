@@ -137,40 +137,41 @@
     }
 
     .hero-inner {
-      position: relative;
-      z-index: 2;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
-      width: 100%;
-      max-width: 1600px;
-      margin: 0 auto;
-      padding: 60px;
+      position:relative;
+      z-index:2;
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:clamp(32px,4vw,64px);
+      align-items:center;
+
+      width:min(1400px,92%);
+      margin:0 auto;
+
+      padding:clamp(24px,4vw,48px) 0;
     }
 
     /* ── Left column ── */
     .hero-eyebrow {
-      font-family: var(--font-mono);
-      font-size: 40px;
-      font-weight: lighter;
-      letter-spacing: 1px;
-      color: var(--gold);
-      text-transform: uppercase;
-      margin-bottom: 14px;
-      opacity: 0;
-      animation: fadeUp .5s ease .15s forwards;
+      font-family:var(--font-mono);
+      font-size:clamp(18px,1.6vw,28px);
+      font-weight:400;
+      letter-spacing:1px;
+      color:var(--gold);
+      text-transform:uppercase;
+      margin-bottom:14px;
+      opacity:0;
+      animation:fadeUp .5s ease .15s forwards;
     }
 
     .hero-name {
-      font-size: clamp(110px, 4.5vw, 90px);
-      font-weight: 600;
-      line-height: 1.02;
-      letter-spacing: -2px;
-      color: var(--frost);
-      margin-bottom: 20px;
-      opacity: 0;
-      animation: fadeUp .5s ease .3s forwards;
+      font-size:clamp(56px,5vw,88px);
+      font-weight:600;
+      line-height:1.02;
+      letter-spacing:-2px;
+      color:var(--frost);
+      margin-bottom:18px;
+      opacity:0;
+      animation:fadeUp .5s ease .3s forwards;
     }
 
     .hero-roles {
@@ -198,12 +199,12 @@
     }
 
     .role-item {
-      font-family: var(--font-mono);
-      font-size: 25px;
-      font-weight: 500;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--gold);
+      font-family:var(--font-mono);
+      font-size:clamp(14px,1.1vw,18px);
+      font-weight:500;
+      letter-spacing:1.2px;
+      text-transform:uppercase;
+      color:var(--gold)
     }
 
     .role-item.dim { color: rgba(226, 232, 240, .45); }
@@ -214,13 +215,13 @@
     }
 
     .hero-bio {
-      font-size: 25px;
-      line-height: 1.5;
-      color: var(--mist);
-      max-width: 800px;
-      margin-bottom: 34px;
-      opacity: 0;
-      animation: fadeUp .5s ease .6s forwards;
+      font-size:clamp(18px,1.15vw,22px);
+        line-height:1.7;
+        color:var(--mist);
+        max-width:700px;
+        margin-bottom:28px;
+        opacity:0;
+        animation:fadeUp .5s ease .6s forwards;
     }
 
     .hero-bio strong {
@@ -237,33 +238,21 @@
       animation: fadeUp .5s ease .75s forwards;
     }
 
+
+    
     .btn-primary {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 13px 26px;
-      background: var(--gold);
-      color: var(--midnight);
-      font-size: 20px;
-      font-weight: 600;
-      border-radius: 6px;
-      text-decoration: none;
-      transition: transform .18s, opacity .18s;
+        background:var(--gold);
+  color:var(--midnight);
+  text-decoration:none;
+  transition:transform .18s,opacity .18s;
     }
     .btn-primary:hover { transform: translateY(-2px); opacity: .88; }
 
     .btn-secondary {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 13px 26px;
-      border: 1px solid rgba(226, 232, 240, .15);
-      color: var(--frost);
-      font-size: 20px;
-      font-weight: 600;
-      border-radius: 6px;
-      text-decoration: none;
-      transition: border-color .18s, color .18s, transform .18s;
+      border:1px solid rgba(226,232,240,.15);
+  color:var(--frost);
+  text-decoration:none;
+  transition:border-color .18s,color .18s,transform .18s;
     }
     .btn-secondary:hover {
       border-color: var(--gold);
@@ -284,41 +273,26 @@
 
 
 
-/* From Uiverse.io by absoluteSTrange */ 
-button {
-  padding: 16px 50px;
-  border-radius: 5px;
-  border: 0;
-  
-  /* CAMBIO: El amarillo/dorado de tu imagen */
-  background-color: #EAB308; 
-  
-  /* CAMBIO: Sombra 3D en un tono dorado más oscuro para el efecto de profundidad */
-  box-shadow: #B45309 0px 10px 0px 0px; 
-  
-  /* CAMBIO: Texto oscuro para que contraste perfecto y sea legible */
-  color: #0F172A; 
-  
-  letter-spacing: 1.5px;
-  
-  font-weight: bold; /* Mantenemos la letra delgada que querías al inicio */
-  transition: all 0.3s ease;
-  cursor: pointer;
+button{
+  padding:14px 34px;
+  border-radius:10px;
+  border:0;
+  background-color:#EAB308;
+  box-shadow:#B45309 0px 8px 0px 0px;
+  color:#0F172A;
+  letter-spacing:1px;
+  font-weight:700;
+  transition:all .25s ease;
+  cursor:pointer;
 }
 
-button:hover {
-  /* CAMBIO: Mantiene la sombra oscura pero reduce el tamaño al flotar */
-  box-shadow: #B45309 0px 7px 0px 0px; 
+button:hover{
+  box-shadow:#B45309 0px 5px 0px 0px;
 }
 
-button:active {
-  background-color: #EAB308;
-  
-  /* CAMBIO: La sombra se reduce a 0 para simular que el botón tocó el "suelo" */
-  box-shadow: #B45309 0px 0px 0px 0px; 
-  
-  transform: translateY(5px);
-  transition: 200ms;
+button:active{
+  box-shadow:#B45309 0px 0px 0px 0px;
+  transform:translateY(4px);
 }
 
 
@@ -327,30 +301,34 @@ button:active {
     
 
     .hero-socials {
-      display: flex;
-      gap: 25px;
-      opacity: 0;
-      animation: fadeUp .5s ease .9s forwards;
+      display:flex;
+      gap:16px;
+      opacity:0;
+      animation:fadeUp .5s ease .9s forwards;
     }
 
     .soc-link {
-      width: 80px;
-      height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid rgba(226, 232, 240, .1);
-      border-radius: 8px;
-      color: var(--mist-lt);
-      text-decoration: none;
-      transition: border-color .18s, color .18s, transform .18s;
+   width:56px;
+  height:56px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(226,232,240,.12);
+  border-radius:12px;
+  color:var(--mist-lt);
+  text-decoration:none;
+  transition:border-color .18s,color .18s,transform .18s;
     }
     .soc-link:hover {
       border-color: var(--gold);
       color: var(--gold);
       transform: translateY(-3px);
     }
-    .soc-link svg { width: 40px; height: 40px; fill: currentColor; }
+    .soc-link svg { 
+     width:26px;
+  height:26px;
+  fill:currentColor;
+    }
 
     
     
@@ -361,13 +339,15 @@ button:active {
     }
 
     .code-editor {
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, .07);
-      box-shadow:
-        0 0 0 1px rgba(240, 180, 41, .06),
-        0 24px 64px rgba(0, 0, 0, .55),
-        0 4px 20px rgba(0, 0, 0, .3);
+      width:100%;
+  max-width:640px;
+  margin-left:auto;
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.08);
+  box-shadow:
+    0 0 0 1px rgba(240,180,41,.05),
+    0 20px 50px rgba(0,0,0,.45);
     }
 
     .ed-header {
@@ -407,9 +387,9 @@ button:active {
     }
 
     .ed-lines {
-      font-family: var(--font-mono);
-      font-size: 20px;
-      line-height: 1.75;
+      font-family:var(--font-mono);
+      font-size:15px;
+      line-height:1.7;
     }
 
 
@@ -696,11 +676,10 @@ button:active {
 ═════════════════════════════════════════ */
 
 .section-container {
-  position: relative;
-  width: 100%;
-  max-width: 2000px;
-  margin: 0 auto;
-  padding: 120px 60px;
+  position:relative;
+  width:min(1400px,92%);
+  margin:0 auto;
+  padding:clamp(72px,8vw,120px) 0;
 }
 
 .section-header {
@@ -709,26 +688,22 @@ button:active {
 }
 
 .section-eyebrow {
-  display: inline-block;
-  font-family: var(--font-mono);
-  font-size: 40px;
-  font-weight: 100;
-  letter-spacing: 5px;
-  color: var(--gold);
-  text-transform: uppercase;
-  margin-bottom: 16px;
-  opacity: 0;
-  animation: fadeUp .5s ease forwards;
+  display:inline-block;
+  font-family:var(--font-mono);
+  font-size:clamp(14px,1vw,18px);
+  font-weight:500;
+  letter-spacing:3px;
+  color:var(--gold);
+  text-transform:uppercase;
+  margin-bottom:14px;
 }
 
 .section-title {
-  font-size: clamp(150px, 3.5vw, 54px);
-  font-weight: 100;
-  color: var(--frost);
-  margin-bottom: 16px;
-  letter-spacing: -1px;
-  opacity: 0;
-  animation: fadeUp .5s ease .1s forwards;
+  font-size:clamp(36px,4vw,56px);
+  font-weight:700;
+  color:var(--frost);
+  line-height:1.05;
+  margin-bottom:16px;
 }
 
 .section-subtitle {
@@ -738,6 +713,86 @@ button:active {
   line-height: 1.5;
   opacity: 0;
   animation: fadeUp .5s ease .2s forwards;
+}
+
+
+@media (max-width:1366px){
+  .nav-links{ gap:28px; }
+
+  .nav-links a{ font-size:16px; }
+
+  .hero-inner{
+    width:min(1280px,92%);
+    gap:40px;
+  }
+
+  .hero-name{
+    font-size:clamp(48px,4.6vw,72px);
+  }
+
+  .hero-bio{
+    font-size:18px;
+  }
+
+  .code-editor{
+    max-width:560px;
+  }
+
+  .section-container{
+    width:min(1280px,92%);
+  }
+}
+
+
+
+@media (max-width:768px){
+  .hero-inner{
+    grid-template-columns:1fr;
+    gap:44px;
+    width:min(92%,640px);
+    padding:24px 0 40px;
+  }
+
+  .hero-left{ text-align:center; }
+
+  .hero-right{
+    order:2;
+    width:100%;
+  }
+
+  .hero-left{ order:1; }
+
+  .hero-name{ font-size:clamp(42px,12vw,64px); }
+
+  .hero-bio{
+    font-size:18px;
+    margin-inline:auto;
+  }
+
+  .hero-roles,
+  .roles-list,
+  .hero-ctas,
+  .hero-socials{
+    justify-content:center;
+  }
+
+  .roles-bar{ display:none; }
+
+  .code-editor{
+    max-width:100%;
+    margin:0 auto;
+  }
+
+  .ed-lines{ font-size:14px; }
+
+  .section-container{
+    width:min(92%,640px);
+    padding:64px 0;
+  }
+
+  .section-title{
+    font-size:clamp(32px,9vw,44px);
+  }
 }
 
 /* ══════════════════════════════════════
