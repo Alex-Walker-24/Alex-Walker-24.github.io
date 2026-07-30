@@ -15,7 +15,7 @@
 
       --font-ui:   'Plus Jakarta Sans', sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
-      --nav-h:     68px;
+      --nav-h:     60px;
     }
 
     /* ══════════════════════════════════════
@@ -50,9 +50,9 @@
         justify-content: center; 
         
         /* Si tus enlaces se ven muy pegados entre sí, puedes agregar un gap aquí: */
-        gap: 40px; /* Ajusta el espacio horizontal entre cada opción de menú */
+        gap: 28px; /* Ajusta el espacio horizontal entre cada opción de menú */
         
-        padding: 0 60px;
+        padding: 0 32px;
         background: rgba(8, 12, 24, .88);
         backdrop-filter: blur(14px);
         -webkit-backdrop-filter: blur(14px);
@@ -61,9 +61,9 @@
 
     .nav-logo {
       font-family: var(--font-mono);
-      font-size: 35px;
+      font-size: 28px;
       font-weight: 600;
-      letter-spacing: 3.5px;
+      letter-spacing: 2px;
       color: var(--gold);
       text-decoration: none;
     }
@@ -71,13 +71,13 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 50px;
+      gap: 34px;
       list-style: none;
     }
 
     .nav-links a {
-      font-size: 20px;
-      font-weight: 100;
+      font-size: 16px;
+      font-weight: 500;
       color: var(--mist-lt);
       text-decoration: none;
       position: relative;
@@ -1606,7 +1606,7 @@ PROYECTOS WEB
     background:var(--midnight);
     border-top:1px solid rgba(240,180,41,.08);
     overflow:hidden;
-    padding:20px;
+    padding:0px;
 
 }
 
@@ -1632,42 +1632,27 @@ PROYECTOS WEB
 
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    gap:42px;
+    gap:32px;
 
 }
 
 /*============================*/
 
 .project-card{
-
     display:flex;
-
     flex-direction:column;
-
     background:rgba(15,23,41,.75);
-
     border:1px solid rgba(240,180,41,.15);
-
     border-radius:18px;
-
     overflow:hidden;
-
     transition:.35s;
-
-    
-
 }
 
 .project-card:hover{
-
-    transform:translateY(-10px);
-
+    transform:translateY(-8px);
     border-color:rgba(240,180,41,.45);
-
     box-shadow:
-
         0 18px 45px rgba(240,180,41,.12);
-
 }
 
 /*============================*/
@@ -1675,208 +1660,126 @@ PROYECTOS WEB
 /*============================*/
 
 .project-image{
-
      display:flex;
-
     justify-content:center;
-
     align-items:center;
-
 }
 
 .project-image-wrapper{
-
     width:100%;
-
-    max-width:480px;
-
+    max-width:430px;
 }
 
 .project-image img{
-
     width:100%;
-
     display:block;
-
     border-radius: 14px;
-
     transition:.55s;
-
 }
 
 .project-card:hover .project-image-wrapper{
-
-    transform:translateX(8px);
-
+    transform:translateX(4px);
 }
 
 .project-card:hover img{
-
-    transform:scale(1.04);
-
+    transform:scale(1.02);
 }
 
 /*============================*/
 
 .project-content{
-
     display:flex;
-
     flex-direction:column;
-
     justify-content:center;
-
     align-items:center;
-
     text-align:center;
-
-    padding:28px;
-
+    padding:24px;
 }
 
 /*============================*/
 
 .project-content h3{
-
-    font-size:2.2rem;
-
+    font-size:clamp(28px,2vw,34px);
     color:var(--frost);
-
     line-height:1.3;
-
     margin-bottom:18px;
-
     text-align: center;
-
-    
-
 }
 
 .project-content p{
-
     color:var(--mist-lt);
-
-    font-size:1.2rem;
-
-    line-height:1.5;
-
+    font-size:1.05rem;
+    line-height:1.7;
     margin-bottom:24px;
-
     text-align: center;
-
 }
 
 
 .project-body{
-
     display:grid;
-
     grid-template-columns:55% 45%;
-
     align-items:center;
-
-    gap:35px;
-
-    padding:30px;
-
+    gap:28px;
+    padding:24px;
 }
 
 /*============================*/
 
 .project-tags{
-
     display:flex;
-
     flex-wrap:wrap;
-
     justify-content:center;
-
     align-items:center;
-
-    gap:12px;
-
+    gap:10px;
     margin-bottom:28px;
 }
 
 .project-tags span{
-
     display:flex;
     align-items:center;
     gap:8px;
-
-    padding:8px 15px;
-
+    padding:7px 13px;
     border-radius:30px;
-
     background:rgba(240,180,41,.08);
-
     color:var(--gold);
-
     border:1px solid rgba(240,180,41,.25);
-
     font-family:var(--font-mono);
-
-    font-size:16px;
-
+    font-size:15px;
     transition:.35s;
-
 }
 
 .project-tags span img{
-
-    width:18px;
-    height:18px;
-
+    width:16px;
+    height:16px;
     object-fit:contain;
-
     flex-shrink:0;
-
 }
 
 .project-tags span:hover{
-
     background:#F0B429;
-
     color:#111827;
-
     transform:translateY(-3px);
-
     box-shadow:
-
         0 0 10px rgba(240,180,41,.8),
-
         0 0 24px rgba(240,180,41,.45);
-
 }
 
 /*============================*/
 
 .project-btn{
-
     display:inline-flex;
-
     align-items:center;
-
     gap:8px;
-
     color:var(--gold);
-
     text-decoration:none;
-
-    font-size:1.08rem;
-
+    font-size:1rem;
     font-weight:700;
-
     transition:.3s;
-
 }
 
 .project-btn:hover{
-
     color:#FFD95E;
-
     letter-spacing:.5px;
-
 }
 
 /*============================*/
@@ -1930,75 +1833,46 @@ padding-top:20px;
 
 
 .project-window{
-
-    height:46px;
-
+    height:42px;
     display:flex;
-
     align-items:center;
-
     padding:0 18px;
-
     border-bottom:1px solid rgba(255,255,255,.06);
-
     background:rgba(255,255,255,.02);
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
-    
-
-
 }
 
 
 .window-buttons{
-
     display:flex;
-
     gap:10px;
-
 }
 
 .window-buttons span{
-
-    width:13px;
-
-    height:13px;
-
+    width:11px;
+    height:11px;
     border-radius:50%;
-
 }
 
 .red{
-
     background:#FF5F57;
-
 }
 
 .yellow{
-
     background:#FEBC2E;
-
 }
 
 .green{
-
     background:#28C840;
-
 }
 
 
 
 .window-title{
-
     color:#8A93A7;
-
-    font-size:20px;
-
+    font-size:17px;
     font-family:var(--font-mono);
 }
 
@@ -2015,61 +1889,38 @@ DASHBOARDS BI
 =========================================*/
 
 #dashboards-bi{
-
     background:var(--midnight);
-
     border-top:1px solid rgba(239, 248, 56, 0.1);
 }
 
 .bi-grid{
-
     display:grid;
-
     grid-template-columns:repeat(2,1fr);
-
-    gap:40px;
-
-    margin-top:60px;
-
+    gap:32px;
+    margin-top:50px;
 }
 
 .dashboard-bar{
-
     position:relative;
-
-    height:48px;
-
+    height:42px;
     display:flex;
-
     align-items:center;
-
-    padding:0 18px;
-
+    padding:0 16px;
     background:#1B2436;
-
 }
 
 .dashboard-bar::after{
-
     content:"";
-
     position:absolute;
-
     left:0;
-
     bottom:0;
-
     width:100%;
-
     height:2px;
-
     background:#F0B429;
-
     box-shadow:
         0 0 8px rgba(240,180,41,.8),
         0 0 18px rgba(240,180,41,.6),
         0 0 35px rgba(240,180,41,.35);
-
 }
 
 
@@ -2111,7 +1962,7 @@ DASHBOARDS BI
 
     align-items:center;
 
-    padding:30px;
+    padding:24px;
 
 }
 
@@ -2119,7 +1970,7 @@ DASHBOARDS BI
 
     width:100%;
 
-    max-width:800px;
+    max-width:700px;
 
     border-radius:12px;
 
@@ -2129,13 +1980,13 @@ DASHBOARDS BI
 
 .bi-card:hover .bi-image{
 
-    transform:scale(1.04);
+    transform:scale(1.02);
 
 }
 
 .bi-content{
 
-    padding:30px;
+    padding:24px;
 
     display:flex;
 
@@ -2151,7 +2002,7 @@ DASHBOARDS BI
 
     display:inline-block;
 
-    padding:8px 16px;
+    padding:7px 14px;
 
     border-radius:30px;
 
@@ -2159,7 +2010,7 @@ DASHBOARDS BI
 
     color:var(--sky);
 
-    font-size:14px;
+    font-size:13px;
 
     font-family:var(--font-mono);
 
@@ -2168,26 +2019,22 @@ DASHBOARDS BI
 }
 
 .bi-content h3{
-
-    padding:30px 0 5px;
-
-    font-size:36px;
-
+padding:18px 0 5px;
+    font-size:clamp(28px,2vw,32px);
     color:var(--frost);
-
-    margin-bottom:15px;
+    margin-bottom:12px;
 
 }
 
 .bi-content p{
 
-    font-size:20px;
+    font-size:17px;
 
     color:var(--mist-lt);
 
     line-height:1.7;
 
-    margin-bottom:25px;
+    margin-bottom:20px;
 
 }
 
@@ -2215,7 +2062,7 @@ DASHBOARDS BI
   background: linear-gradient(to bottom, #050814 0%, var(--midnight) 100%);
   border-top: 1px solid rgba(240, 180, 41, .08);
   overflow: hidden;
-  padding-bottom: 120px;
+  padding-bottom: 90px;
 }
 
 /* Cielo nocturno superior */
@@ -2275,10 +2122,10 @@ DASHBOARDS BI
 /* Cuadrícula de tarjetas ajustada para tamaños más grandes (minmax ampliado y mayor ancho máximo general) */
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
   margin-top: 50px;
-  max-width: 1000px;
+  max-width: 920px;
   margin-inline: auto;
 }
 
@@ -2299,8 +2146,7 @@ DASHBOARDS BI
 
 /* Efecto hover general de las tarjetas con iluminación en azul marino */
 .contact-card:hover {
-  transform: translateY-10px;
-  transform: translateY(-10px);
+  transform: translateY(-8px);
   background: rgba(13, 27, 62, 0.9);
   border-color: #3b82f6;
   box-shadow: 0 0 35px rgba(59, 130, 246, 0.35), 0 25px 50px rgba(0, 0, 0, 0.6);
@@ -2309,7 +2155,7 @@ DASHBOARDS BI
 /* Bloque superior tipo terreno 3D (Más alto para dar mayor presencia visual) */
 .contact-terrain {
   position: relative;
-  height: 180px;
+  height: 150px;
   background: linear-gradient(135deg, #162514 0%, #0d1710 100%);
   display: flex;
   align-items: center;
@@ -2339,8 +2185,8 @@ DASHBOARDS BI
 
 /* Contenedor del icono 3D flotante (Dimensiones aumentadas) */
 .contact-icon-3d {
-  width: 86px;
-  height: 86px;
+  width: 72px;
+  height: 72px;
   border-radius: 18px;
   display: flex;
   align-items: center;
@@ -2348,11 +2194,11 @@ DASHBOARDS BI
   transform: perspective(700px) rotateX(20deg) rotateY(-15deg) rotateZ(5deg);
   transform-style: preserve-3d;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  padding: 16px;
+  padding: 14px;
 }
 
 .contact-card:hover .contact-icon-3d {
-  transform: perspective(700px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1.15) translateY(-6px);
+  transform: perspective(700px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1.08) translateY(-6px);
 }
 
 /* Imagen SVG interior del icono */
@@ -2404,7 +2250,7 @@ DASHBOARDS BI
 
 /* Sección de textos de información dentro de la tarjeta */
 .contact-info {
-  padding: 35px 30px;
+  padding: 28px 24px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -2413,13 +2259,13 @@ DASHBOARDS BI
 }
 
 .contact-info h3 {
-  font-size: 28px;
+  font-size: 24px;
   color: var(--frost);
   font-weight: 700;
 }
 
 .contact-info p {
-  font-size: 19px;
+  font-size: 17px;
   color: var(--mist-lt);
   margin-bottom: 8px;
 }
@@ -2427,7 +2273,7 @@ DASHBOARDS BI
 /* Botón de enlace inferior */
 .contact-link-btn {
   font-family: var(--font-mono);
-  font-size: 17px;
+  font-size: 15px;
   color: var(--gold);
   font-weight: 600;
   transition: all 0.3s ease;
